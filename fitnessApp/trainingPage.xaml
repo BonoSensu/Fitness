@@ -1,0 +1,21 @@
+﻿<Page x:Class="fitnessApp.trainingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:fitnessApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="trainingPage"
+      Background="AliceBlue">
+
+    <Grid>
+        <Label x:Name="label" Content="Результаты тренировок" HorizontalAlignment="Left" Margin="43,10,0,0" VerticalAlignment="Top" Width="223"/>
+        <DatePicker x:Name="DateTrening" HorizontalAlignment="Left" Margin="8,322,0,0" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="textTraining" HorizontalAlignment="Left" Height="24" Margin="118,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
+        <Label x:Name="label1" Content="ккал" HorizontalAlignment="Left" Height="24" Margin="196,322,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="labelresult" Content="У вас нет загруженных результатов тренировок" HorizontalAlignment="Left" Height="214" Margin="0,52,0,0" VerticalAlignment="Top" Width="400"/>
+        <Button x:Name="buttonTraining" Content="Ввести" HorizontalAlignment="Left" Margin="225,322,0,0" VerticalAlignment="Top" Width="75" Click="buttonTraining_Click"/>
+
+    </Grid>
+</Page>

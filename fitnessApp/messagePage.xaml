@@ -1,0 +1,19 @@
+﻿<Page x:Class="fitnessApp.messagePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:fitnessApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="messagePage"
+      Background="AliceBlue">
+
+    <Grid>
+        <TextBox x:Name="textBoxSendMessage" HorizontalAlignment="Left" Height="39" Margin="10,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131"/>
+        <Button x:Name="buttonSendMessage" Content="Отправить сообщение" HorizontalAlignment="Left" Height="39" Margin="157,233,0,0" VerticalAlignment="Top" Width="143" Click="buttonSendMessage_Click"/>
+        <Label x:Name="labelMessage" Content="У вас нет сообщений" HorizontalAlignment="Left" Height="185" Margin="10,10,0,0" VerticalAlignment="Top" Width="280"/>
+        <ComboBox x:Name="comboBoxUsers" HorizontalAlignment="Left" Margin="10,200,0,0" VerticalAlignment="Top" Width="131" Visibility="Hidden" />
+
+    </Grid>
+</Page>

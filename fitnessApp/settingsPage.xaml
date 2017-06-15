@@ -1,0 +1,25 @@
+﻿<Page x:Class="fitnessApp.settingsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:fitnessApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="settingsPage"
+      Background="AliceBlue">
+
+    <Grid>
+        <Label x:Name="label" Content="Настройки пользователя" HorizontalAlignment="Left" Margin="78,33,0,0" VerticalAlignment="Top" Width="192"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="23" Margin="25,84,0,0" TextWrapping="Wrap" Text="Имя пользователя" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonName" Content="Изменить" HorizontalAlignment="Left" Margin="182,84,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <TextBox x:Name="textBoxPass" HorizontalAlignment="Left" Height="23" Margin="25,111,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonPass" Content="Изменить" HorizontalAlignment="Left" Margin="182,111,0,0" VerticalAlignment="Top" Width="75" Click="buttonPass_Click"/>
+        <TextBox x:Name="textBoxTargetWeght" HorizontalAlignment="Left" Height="23" Margin="25,138,0,0" TextWrapping="Wrap" Text="Целевой вес" VerticalAlignment="Top" Width="120" TextChanged="textBoxName_Copy1_TextChanged"/>
+        <Button x:Name="buttonName_Copy1" Content="Изменить" HorizontalAlignment="Left" Margin="182,138,0,0" VerticalAlignment="Top" Width="75" Click="buttonName_Copy1_Click"/>
+        <Button x:Name="buttonName_Copy2" Content="Изменить" HorizontalAlignment="Left" Margin="182,190,0,0" VerticalAlignment="Top" Width="75" Click="buttonName_Copy2_Click"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="25,191,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Выбрать нового тренера" HorizontalAlignment="Left" Margin="25,166,0,0" VerticalAlignment="Top" Width="232"/>
+
+    </Grid>
+</Page>
